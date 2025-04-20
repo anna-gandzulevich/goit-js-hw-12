@@ -8,14 +8,14 @@ export const fetchPhotosByQuery = async (q, currentPage) => {
     const searchParams = {
       q,
       page: currentPage,
-      key: '49370474-a1716903616cca1a00d36cfab',
+      key: '49821114-4fd29475c454a2f5ef41f6df5',
       image_type: 'photo',
       orientation: 'horizontal',
       safesearch: true,
       per_page: 15,
     };
 
-    return await axios.get('', { params: searchParams });
+    return await axios.get(URL, { params: searchParams });
   } catch (error) {
     console.log(error.message);
   }
